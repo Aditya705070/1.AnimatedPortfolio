@@ -1,0 +1,30 @@
+#projects {
+  width:100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:30px;
+  overflow: hidden;
+}
+.slider{
+  width: 90%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  gap: 20px;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  padding:15px;
+}
+#para{
+  font-size: 4vmax;
+  background: linear-gradient(to right, rgb(205, 66, 140), white);
+  background-clip: text;
+  color: transparent;
+  /* font-size: 20px; */
+  text-align: center;
+}
