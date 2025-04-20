@@ -61,8 +61,7 @@ nav h1{
  top: 80px; 
  width: 100%;
  height: 100vh;
- background-color: rgba(11, 17, 25, 0.922);
-
+ background-color: rgba(13, 15, 17, 0.922);
  right:0;
  transform: translateX(100%);
  flex-direction: column;

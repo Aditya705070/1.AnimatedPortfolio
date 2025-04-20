@@ -97,7 +97,7 @@ function About() {
                 <span>NAME</span> : ADITYA KUMAR
               </li>
               <li>
-                <span>AGE</span> : 25 YEARS
+                <span>AGE</span> : 20 YEARS
               </li>
               <li>
                 <span>LOCATION</span> : PATNA

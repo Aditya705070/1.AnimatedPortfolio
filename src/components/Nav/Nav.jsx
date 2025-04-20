@@ -13,31 +13,46 @@ function Nav ()  {
     tl.from("nav ul li",{y: -100, duration: 0.7,opacity: 0, stagger: 0.3,})
   }) 
    const handleClick = () => {
-   mobile.current.classList.toggle("activemobile")
-   menu.current.classList.toggle("activeham")
+   mobile.current.classList.toggle("activemobile");
+   menu.current.classList.toggle("activeham");
   }
   return (
     <nav>
-      <h1>PORTFOLIO</h1>
-      <ul className='desktopmenu'>
-        <Link to="home" smooth={true} activeClass='active' spy={true} duration={500}><li>Home</li></Link>
-        <Link to="about" smooth={true} activeClass='active' spy={true}  duration={500}><li>About</li></Link>
-        <Link to="projects" smooth={true} activeClass='active' spy={true} duration={500}><li>Projects</li></Link>  
-        <Link to="contact" smooth={true} activeClass='active' spy={true}  duration={500}><li>Contact</li></Link>
-     
-      </ul> 
-      <div className="hamburger" onClick={handleClick} ref={menu}>
-        <div className="ham"></div>
-        <div className="ham"></div>
-        <div className="ham"></div>
-      </div> 
-      <ul className='mobilemenu'  ref={mobile}>
-        <Link to="home" smooth={true} activeClass='active' spy={true} duration={500}><li>Home</li></Link>
-        <Link to="about" smooth={true} activeClass='active' spy={true}  duration={500}><li>About</li></Link>
-        <Link to="projects" smooth={true} activeClass='active' spy={true} duration={500}><li>Projects</li></Link>  
-        <Link to="contact" smooth={true} activeClass='active' spy={true}  duration={500}><li>Contact</li></Link>
-      </ul>
-      </nav>  
+  <h1>PORTFOLIO</h1>
+  <ul className="desktopmenu">
+    <Link to="home" smooth={true} activeClass="active" spy={true} duration={500}>
+      <li>Home</li>
+    </Link>
+    <Link to="about" smooth={true} activeClass="active" spy={true} duration={500}>
+      <li>About</li>
+    </Link>
+    <Link to="projects" smooth={true} activeClass="active" spy={true} duration={500}>
+      <li>Projects</li>
+    </Link>
+    <Link to="contact" smooth={true} activeClass="active" spy={true} duration={500}>
+      <li>Contact</li>
+    </Link>
+  </ul>
+  <div className="hamburger" onClick={handleClick} ref={menu}>
+    <div className="ham"></div>
+    <div className="ham"></div>
+    <div className="ham"></div>
+  </div>
+  <ul className="mobilemenu" ref={mobile}>
+    <Link to="home" smooth={true} activeClass="active" spy={true} duration={500}>
+      <li>Home</li>
+    </Link>
+    <Link to="about" smooth={true} activeClass="active" spy={true} duration={500}>
+      <li>About</li>
+    </Link>
+    <Link to="projects" smooth={true} activeClass="active" spy={true} duration={500}>
+      <li>Projects</li>
+    </Link>
+    <Link to="contact" smooth={true} activeClass="active" spy={true} duration={500}>
+      <li>Contact</li>
+    </Link>
+  </ul>
+</nav>
   )
 }
 
