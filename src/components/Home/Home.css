@@ -14,26 +14,22 @@ overflow: hidden;
   align-items: center;
   color:white;
 }
-.righthome {
-  background: rgba(30,30,30,0.8);
-  border-radius: 50%;
-  width: 320px;
-  height: 320px;
+.righthome{
+  width: 50%;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 40px rgba(66,180,205,0.4);
-  margin: auto;
-  overflow: hidden;            /* Ensures nothing overflows the circle */
+  filter:drop-shadow(2px 2px 20px rgba(116,201,225));
 }
 
-.righthome img {
-  width: 100%;                 /* Fill the container */
-  height: 100%;                /* Same as container height */
-  border-radius: 50%;
-  object-fit: cover;           /* Fit perfectly inside the circle */
-  display: block;
+.righthome img{
+  width: 50%;
+  height: 50%;         /* Add this line for equal width and height */
+  border-radius: 50%;  /* Add this line to make the image circular */
+  object-fit: cover;   /* Add this to ensure the image fills the circle properly */
 }
+
 
 
 .homedetails{
