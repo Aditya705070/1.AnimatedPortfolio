@@ -15,23 +15,24 @@ overflow: hidden;
   color:white;
 }
 .righthome {
-  background: rgba(30,30,30,0.8);     /* Light black with some transparency */
-  border-radius: 50%;                 /* Makes the background circular */
-  width: 320px;                       /* Set your preferred size */
-  height: 320px;                      /* Set your preferred size */
+  background: rgba(30,30,30,0.8);
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 40px rgba(66,180,205,0.4); /* Optional blue glow effect */
+  box-shadow: 0 0 40px rgba(66,180,205,0.4);
   margin: auto;
+  overflow: hidden;            /* Ensures nothing overflows the circle */
 }
 
 .righthome img {
-  width: 80%;              /* Slightly smaller than the container */
-  height: 80%;             /* Maintain circular shape */
+  width: 100%;                 /* Fill the container */
+  height: 100%;                /* Same as container height */
   border-radius: 50%;
-  object-fit: cover;
-  filter: none;            /* Remove any color or hue filters */
+  object-fit: cover;           /* Fit perfectly inside the circle */
+  display: block;
 }
 
 
