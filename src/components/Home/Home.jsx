@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Home.css';
-import man from "../../assets/Aditya.jpg";
+import man from "../../assets/man.png";
 import { Typewriter } from 'react-simple-typewriter';
 import {useGSAP} from '@gsap/react'
 import { gsap } from 'gsap'
