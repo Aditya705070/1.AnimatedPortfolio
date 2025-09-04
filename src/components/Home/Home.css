@@ -24,8 +24,12 @@ overflow: hidden;
 }
 
 .righthome img{
-  width:50%;
+  width: 50%;
+  height: 50%;         /* Add this line for equal width and height */
+  border-radius: 50%;  /* Add this line to make the image circular */
+  object-fit: cover;   /* Add this to ensure the image fills the circle properly */
 }
+
 
 .homedetails{
   font-size: 2vmax;
